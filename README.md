@@ -4,6 +4,7 @@ A basic website to host resources and information for the Norwegian-English Lang
 
 ## Build Status
 
-| Branch | Status |
-|--------|--------|
-| master | [![master](https://circleci.com/gh/anamorphism/nelle/tree/master.svg?style=svg)](https://circleci.com/gh/anamorphism/nelle/tree/master) |
+| Branch  | Status |
+|---------|--------|
+| master  | [![master](https://circleci.com/gh/anamorphism/nelle/tree/master.svg?style=svg)](https://circleci.com/gh/anamorphism/nelle/tree/master)    |
+| develop | [![develop](https://circleci.com/gh/anamorphism/nelle/tree/develop.svg?style=svg)](https://circleci.com/gh/anamorphism/nelle/tree/develop) |
