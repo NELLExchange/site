@@ -21,6 +21,7 @@ jobs:
           name: Build Site
           command: yarn build
       - persist_to_workspace:
+          root: .
           paths:
             - public
   publish:
