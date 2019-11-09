@@ -30,7 +30,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: public
+          at: .
       - run:
           name: Install Dependencies & Configure Environment
           command: |
