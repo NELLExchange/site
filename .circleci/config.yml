@@ -32,8 +32,10 @@ jobs:
       - attach_workspace:
           at: public
       - run:
-          name: Install Dependencies
+          name: Install Dependencies & Configure Environment
           command: |
+            echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
+            source $BASH_ENV
             yarn global add gh-pages
             git config user.email "noreply@nelle.no"
             git config user.name "ci-build"
