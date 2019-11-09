@@ -20,3 +20,35 @@ jobs:
       - run:
           name: Build Site
           command: yarn build
+      - persist_to_workspace:
+          paths:
+            - public
+  publish:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - attach_workspace:
+          at: public
+      - run:
+          name: Install Dependencies
+          command: |
+            yarn global add gh-pages
+            git config user.email "noreply@nelle.no"
+            git config user.name "ci-build"
+      - add_ssh_keys:
+          fingerprints:
+            - "df:e5:5d:96:b2:5b:0c:48:a6:1d:15:6b:ec:d9:b8:37"
+      - run:
+          name: Deploy Site
+          command: gh-pages --message "[skip ci] Publish" --dist public
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
