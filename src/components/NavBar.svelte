@@ -6,7 +6,7 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/">
+    <a class="navbar-item" href=".">
       NELLE
     </a>
 
@@ -25,7 +25,7 @@
         </span>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="/resources/dictionaries">
+          <a class="navbar-item" href="resources/dictionaries">
             Dictionaries
           </a>
         </div>
