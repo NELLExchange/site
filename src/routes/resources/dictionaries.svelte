@@ -18,7 +18,7 @@
       href: 'https://www.naob.no/ordbok/',
       tags: {
         bokmål: true,
-        nynorsk: true,
+        nynorsk: false,
         english: false,
         examples: true,
         inflections: true,
