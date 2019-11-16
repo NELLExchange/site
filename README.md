@@ -18,4 +18,4 @@ Yarn is being used for package management.
 
 To run locally simply run `yarn` followed by `yarn dev`.
 
-To build for production, run `yarn export`. To test the production build, `yarn start` can be run after exporting.
+To build for production, run `yarn export`. To test the production build, `yarn start` can be run after exporting. Please note that the base href is set to 'nelle/' for production builds in order to allow hosting by GitHub Pages.
