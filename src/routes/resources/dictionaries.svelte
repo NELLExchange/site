@@ -26,7 +26,7 @@
     },
     {
       name: 'bab.la',
-      description: 'bab.la\'s Norwegian-English dicationary.',
+      description: 'bab.la\'s Norwegian-English dictionary.',
       href: 'https://en.bab.la/dictionary/norwegian-english/',
       tags: {
         bokmål: true,
