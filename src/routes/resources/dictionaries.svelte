@@ -2,7 +2,7 @@
   const dictionaries = [
     {
       name: 'Universitet i Bergens Ordbok',
-      description: 'The University of Bergen\'s dictionary.',
+      description: `<p>The University of Bergen's dictionary.</p><p>Contains the official writing standard and all allowed variants of Norwegian.</p>`,
       href: 'https://ordbok.uib.no/',
       tags: {
         bokmål: true,
@@ -14,7 +14,7 @@
     },
     {
       name: 'Norske Akademis Ordbok',
-      description: 'The Norwegian Academy\'s dictionary.',
+      description: `<p>The Norwegian Academy's dictionary.</p><p>Contains a small sub-set of 'moderat' bokmål and riksmål (not official).</p><p>This makes this dictionary better at handling slang.</p>`,
       href: 'https://www.naob.no/ordbok/',
       tags: {
         bokmål: true,
@@ -26,7 +26,7 @@
     },
     {
       name: 'bab.la',
-      description: 'bab.la\'s Norwegian-English dictionary.',
+      description: `<p>bab.la's Norwegian-English dictionary.</p><p>If you need English translations of words, this site often does a better job than Google Translate.</p>`,
       href: 'https://en.bab.la/dictionary/norwegian-english/',
       tags: {
         bokmål: true,
@@ -61,6 +61,6 @@
       </div>
     </header>
 
-    <p>{dict.description}</p>
+    <p>{@html dict.description}</p>
   </section>
 {/each}
