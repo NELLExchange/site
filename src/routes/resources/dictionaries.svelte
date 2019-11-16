@@ -61,7 +61,6 @@
       </div>
     </header>
 
-      <p>{dict.description}</p>
-
+    <p>{dict.description}</p>
   </section>
 {/each}
