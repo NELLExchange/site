@@ -25,6 +25,18 @@
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
         <span class="navbar-link">
+          Discord
+        </span>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://discord.gg/2d37xPa">
+            Join the Server
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <span class="navbar-link">
           Resources
         </span>
 
