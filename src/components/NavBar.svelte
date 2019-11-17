@@ -1,6 +1,10 @@
 <script>
   function toggleNav() {
-    document.getElementById('navMenu').classList.toggle('is-active');
+    const { target } = this.dataset;
+    const $target = document.getElementById(target);
+    
+    this.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
   }
 </script>
 
