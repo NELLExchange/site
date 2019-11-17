@@ -39,17 +39,35 @@
   ];
 </script>
 
-<h1 class="title">Dictionaries</h1>
+<style lang="scss">
+  .tags-list {
+    margin-top: -1em;
+  }
+
+  .section-content {
+    padding-top: 1em;
+
+    :global(> p:not(:last-child)) {
+      margin-bottom: 1em;
+    }
+  }
+</style>
+
+<section class="section">
+  <div class="container is-fluid">
+    <h1 class="title">Dictionaries</h1>
+  </div>
+</section>
 
 {#each dictionaries as dict}
   <section class="section">
-    <header>
+    <div class="container is-fluid">
       <h2 class="title is-4">{dict.name}</h2>
       <h3 class="subtitle is-5">
         <a href={dict.href}>{dict.href}</a>
       </h3>
 
-      <div class="field is-grouped is-grouped-multiline">
+      <div class="field is-grouped is-grouped-multiline tags-list">
         {#each Object.keys(dict.tags) as tag}
           <div class="control">
             <div class="tags has-addons">
@@ -59,8 +77,10 @@
           </div>
         {/each}
       </div>
-    </header>
 
-    <p>{@html dict.description}</p>
+      <div class="section-content">
+        {@html dict.description}
+      </div>
+    </div>
   </section>
 {/each}
