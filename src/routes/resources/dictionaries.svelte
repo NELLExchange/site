@@ -39,48 +39,34 @@
   ];
 </script>
 
-<style lang="scss">
-  .tags-list {
-    margin-top: -1em;
-  }
-
-  .section-content {
-    padding-top: 1em;
-
-    :global(> p:not(:last-child)) {
-      margin-bottom: 1em;
-    }
-  }
-</style>
-
 <section class="section">
   <div class="container is-fluid">
     <h1 class="title">Dictionaries</h1>
+
+    {#each dictionaries as dict}
+      <article class="message">
+        <div class="message-header">
+          <p>{dict.name}</p>
+        </div>
+        <div class="message-body">
+          <div class="field is-grouped is-grouped-multiline">
+            {#each Object.keys(dict.tags) as tag}
+              <div class="control">
+                <div class="tags has-addons">
+                  <span class="tag is-dark">{tag}</span>
+                  <span class="tag {dict.tags[tag] ? 'is-success' : 'is-danger'}">{dict.tags[tag]}</span>
+                </div>
+              </div>
+            {/each}
+          </div>
+
+          <div class="content">
+            {@html dict.description}
+
+            <p><a href={dict.href}>{dict.href}</a></p>
+          </div>
+        </div>
+      </article>
+    {/each}
   </div>
 </section>
-
-{#each dictionaries as dict}
-  <section class="section">
-    <div class="container is-fluid">
-      <h2 class="title is-4">{dict.name}</h2>
-      <h3 class="subtitle is-5">
-        <a href={dict.href}>{dict.href}</a>
-      </h3>
-
-      <div class="field is-grouped is-grouped-multiline tags-list">
-        {#each Object.keys(dict.tags) as tag}
-          <div class="control">
-            <div class="tags has-addons">
-              <span class="tag is-dark">{tag}</span>
-              <span class="tag {dict.tags[tag] ? 'is-success' : 'is-danger'}">{dict.tags[tag]}</span>
-            </div>
-          </div>
-        {/each}
-      </div>
-
-      <div class="section-content">
-        {@html dict.description}
-      </div>
-    </div>
-  </section>
-{/each}
