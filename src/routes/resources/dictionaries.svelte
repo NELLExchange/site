@@ -1,4 +1,6 @@
 <script>
+  import TagList from '../../components/TagList.svelte';
+
   const dictionaries = [
     {
       name: 'Universitet i Bergens Ordbok',
@@ -49,16 +51,7 @@
           <p>{dict.name}</p>
         </div>
         <div class="message-body">
-          <div class="field is-grouped is-grouped-multiline">
-            {#each Object.keys(dict.tags) as tag}
-              <div class="control">
-                <div class="tags has-addons">
-                  <span class="tag is-dark">{tag}</span>
-                  <span class="tag {dict.tags[tag] ? 'is-success' : 'is-danger'}">{dict.tags[tag]}</span>
-                </div>
-              </div>
-            {/each}
-          </div>
+          <TagList tags={dict.tags}/>
 
           <div class="content">
             {@html dict.description}
