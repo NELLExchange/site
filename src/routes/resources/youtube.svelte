@@ -13,7 +13,7 @@
     },
     {
       name: 'Norsklærer Karense',
-      description: `<p>Karense is a Norewgian teacher whose channel is aimed at teaching Norwegian.</p><p>While most of her videos are in Norwegian, she tends to use simple language.</p>`,
+      description: `<p>Karense is a Norwegian teacher whose channel is aimed at teaching Norwegian.</p><p>While most of her videos are in Norwegian, she tends to use simple language.</p>`,
       href: 'https://www.youtube.com/channel/UCbrUYR892qBNQyY3DEqfTBg',
       tags: {
         english: 'some',
