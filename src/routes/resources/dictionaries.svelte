@@ -1,5 +1,5 @@
 <script>
-  import Page from './_page.svelte';
+  import Page from '../../components/ResourcePage.svelte';
 
   const dictionaries = [
     {
