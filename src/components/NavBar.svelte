@@ -45,6 +45,10 @@
             Dictionaries
           </a>
 
+          <a class="navbar-item" href="resources/sites">
+            Sites
+          </a>
+
           <a class="navbar-item" href="resources/youtube">
             YouTube
           </a>
