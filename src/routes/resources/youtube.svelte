@@ -1,5 +1,5 @@
 <script>
-  import TagList from '../../components/TagList.svelte';
+  import Page from './_page.svelte';
 
   const channels = [
     {
@@ -41,25 +41,4 @@
   ];
 </script>
 
-<section class="section">
-  <div class="container is-fluid">
-    <h1 class="title">YouTube Channels</h1>
-
-    {#each channels as channel}
-      <article class="message">
-        <div class="message-header">
-          <p>{channel.name}</p>
-        </div>
-        <div class="message-body">
-          <TagList tags={channel.tags}/>
-
-          <div class="content">
-            {@html channel.description}
-
-            <p><a href={channel.href}>{channel.href}</a></p>
-          </div>
-        </div>
-      </article>
-    {/each}
-  </div>
-</section>
+<Page items={channels} title="YouTube Channels"/>

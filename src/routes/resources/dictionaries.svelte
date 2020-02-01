@@ -1,5 +1,5 @@
 <script>
-  import TagList from '../../components/TagList.svelte';
+  import Page from './_page.svelte';
 
   const dictionaries = [
     {
@@ -41,25 +41,4 @@
   ];
 </script>
 
-<section class="section">
-  <div class="container is-fluid">
-    <h1 class="title">Dictionaries</h1>
-
-    {#each dictionaries as dict}
-      <article class="message">
-        <div class="message-header">
-          <p>{dict.name}</p>
-        </div>
-        <div class="message-body">
-          <TagList tags={dict.tags}/>
-
-          <div class="content">
-            {@html dict.description}
-
-            <p><a href={dict.href}>{dict.href}</a></p>
-          </div>
-        </div>
-      </article>
-    {/each}
-  </div>
-</section>
+<Page items={dictionaries} title="Dictionaries"/>
