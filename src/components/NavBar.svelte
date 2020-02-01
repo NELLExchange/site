@@ -44,6 +44,10 @@
           <a class="navbar-item" href="resources/dictionaries">
             Dictionaries
           </a>
+
+          <a class="navbar-item" href="resources/youtube">
+            YouTube
+          </a>
         </div>
       </div>
     </div>
