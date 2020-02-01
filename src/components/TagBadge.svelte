@@ -3,7 +3,7 @@
   export let value;
 
   const successValues = [true, 'mostly'];
-  const warningValues = ['some', 'subtitles'];
+  const warningValues = ['paid', 'some', 'subtitles', 'text-to-speech'];
 
   function getClass(value) {
     if (successValues.includes(value)) {

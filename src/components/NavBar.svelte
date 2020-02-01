@@ -41,6 +41,10 @@
         </span>
 
         <div class="navbar-dropdown">
+          <a class="navbar-item" href="resources/courses">
+            Courses
+          </a>
+
           <a class="navbar-item" href="resources/dictionaries">
             Dictionaries
           </a>

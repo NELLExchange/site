@@ -1,0 +1,47 @@
+<script>
+  import Page from './_page.svelte';
+
+  const courses = [
+    {
+      name: 'Duolingo',
+      description: `<p>Probably the most popular language learning site.</p>`,
+      href: 'https://www.duolingo.com/',
+      tags: {
+        apps: true,
+        audio: 'text-to-speech',
+        bokmål: true,
+        free: true,
+        nynorsk: false,
+        video: false,
+      },
+    },
+    {
+      name: 'Memrise',
+      description: `<p>Somewhat of a very advanced flash-carding application.</p>`,
+      href: 'https://www.memrise.com/',
+      tags: {
+        apps: 'paid',
+        audio: true,
+        bokmål: true,
+        free: true,
+        nynorsk: false,
+        video: 'paid',
+      },
+    },
+    {
+      name: 'Norwegian on the Web',
+      description: `<p>NTNU's free introductory course to Norwegian.</p>`,
+      href: 'https://www.ntnu.edu/now',
+      tags: {
+        apps: false,
+        audio: true,
+        bokmål: true,
+        free: true,
+        nynorsk: false,
+        video: false,
+      },
+    },
+  ];
+</script>
+
+<Page items={courses} title="Courses"/>
