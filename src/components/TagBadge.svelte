@@ -16,7 +16,19 @@
 
     return 'is-danger';
   }
+
+  function getValue(value) {
+    if (value === true) {
+      return 'yes';
+    }
+
+    if (value === false) {
+      return 'no';
+    }
+    
+    return value;
+  }
 </script>
 
 <span class="tag is-dark">{name}</span>
-<span class="tag {getClass(value)}">{value}</span>
+<span class="tag {getClass(value)}">{getValue(value)}</span>
