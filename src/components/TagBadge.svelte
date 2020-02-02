@@ -25,7 +25,7 @@
     if (value === false) {
       return 'no';
     }
-    
+
     return value;
   }
 </script>
