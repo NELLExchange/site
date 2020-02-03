@@ -1,6 +1,6 @@
 <style lang="scss">
   .has-background {
-    background: url('/splash.jpg') center center/cover no-repeat;
+    background: url('../splash.jpg') center center/cover no-repeat;
   }
 
   .hero-body > .container {
