@@ -2,7 +2,7 @@
   export let name;
   export let value;
 
-  const successValues = [true, 'mostly'];
+  const successValues = [true, 'yes', 'mostly'];
   const warningValues = ['paid', 'some', 'subtitles', 'text-to-speech'];
 
   function getClass(value) {
@@ -16,19 +16,7 @@
 
     return 'is-danger';
   }
-
-  function getValue(value) {
-    if (value === true) {
-      return 'yes';
-    }
-
-    if (value === false) {
-      return 'no';
-    }
-
-    return value;
-  }
 </script>
 
 <span class="tag is-dark">{name}</span>
-<span class="tag {getClass(value)}">{getValue(value)}</span>
+<span class="tag {getClass(value)}">{value}</span>
