@@ -8,7 +8,7 @@
       href: 'https://www.youtube.com/user/NorwegianLearning',
       tags: {
         english: 'subtitles',
-        learning: true,
+        learning: 'yes',
       },
     },
     {
@@ -17,7 +17,7 @@
       href: 'https://www.youtube.com/channel/UCbrUYR892qBNQyY3DEqfTBg',
       tags: {
         english: 'some',
-        learning: true,
+        learning: 'yes',
       },
     },
     {
@@ -26,7 +26,7 @@
       href: 'https://www.youtube.com/user/Crienexzy',
       tags: {
         english: 'mostly',
-        learning: true,
+        learning: 'yes',
       },
     },
     {
@@ -34,8 +34,8 @@
       description: `<p>Official channel for Peppa Pig (children's television program) content in Norwegian.</p>`,
       href: 'https://www.youtube.com/channel/UC3oJMdoFT1NeygFutx4VhIg',
       tags: {
-        english: false,
-        learning: false,
+        english: 'no',
+        learning: 'no',
       },
     },
   ];

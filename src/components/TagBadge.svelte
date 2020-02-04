@@ -2,7 +2,7 @@
   export let name;
   export let value;
 
-  const successValues = [true, 'mostly'];
+  const successValues = [true, 'yes', 'mostly'];
   const warningValues = ['paid', 'some', 'subtitles', 'text-to-speech'];
 
   function getClass(value) {
