@@ -21,9 +21,9 @@ jobs:
           name: Export Site
           command: yarn export
       - persist_to_workspace:
-          root: __sapper__/export
+          root: __sapper__
           paths:
-            - nelle
+            - export
   publish:
     docker:
       - image: circleci/node:lts
@@ -45,7 +45,7 @@ jobs:
             - "e1:c9:94:fa:7a:a0:08:7a:fc:94:41:74:07:3a:f4:81"
       - run:
           name: Deploy Site
-          command: gh-pages -r git@github.com:NELLExchange/nellexchange.github.io.git --branch master --message "[skip ci] Publish" --dist nelle
+          command: gh-pages -r git@github.com:NELLExchange/nellexchange.github.io.git --branch master --message "[skip ci] Publish" --dist export
 workflows:
   version: 2
   build:
