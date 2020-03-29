@@ -41,7 +41,6 @@ jobs:
             git config user.name "ci-build"
       - add_ssh_keys:
           fingerprints:
-            - "df:e5:5d:96:b2:5b:0c:48:a6:1d:15:6b:ec:d9:b8:37"
             - "e1:c9:94:fa:7a:a0:08:7a:fc:94:41:74:07:3a:f4:81"
       - run:
           name: Deploy Site
