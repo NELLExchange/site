@@ -6,7 +6,7 @@ A basic website to host resources and information for the Norwegian-English Lang
 
 | Branch | Status |
 |--------|--------|
-| master | [![master](https://circleci.com/gh/anamorphism/nelle/tree/master.svg?style=svg)](https://circleci.com/gh/anamorphism/nelle/tree/master) |
+| master | [![master](https://circleci.com/gh/NELLExchange/site/tree/master.svg?style=svg)](https://circleci.com/gh/NELLExchange/site/tree/master) |
 
 ## Developing
 
@@ -18,4 +18,4 @@ Yarn is being used for package management.
 
 To run locally simply run `yarn` followed by `yarn dev`.
 
-To build for production, run `yarn export`. To test the production build, `yarn start` can be run after exporting. Please note that the base href is set to 'nelle/' for production builds in order to allow hosting by GitHub Pages.
+To build for production, run `yarn export`. To test the production build, `yarn start` can be run after exporting.

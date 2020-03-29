@@ -37,14 +37,15 @@ jobs:
             echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
             source $BASH_ENV
             yarn global add gh-pages
-            git config user.email "noreply@nelle.no"
+            git config user.email "noreply@nellexchange.github.io"
             git config user.name "ci-build"
       - add_ssh_keys:
           fingerprints:
             - "df:e5:5d:96:b2:5b:0c:48:a6:1d:15:6b:ec:d9:b8:37"
+            - "e1:c9:94:fa:7a:a0:08:7a:fc:94:41:74:07:3a:f4:81"
       - run:
           name: Deploy Site
-          command: gh-pages --message "[skip ci] Publish" --dist nelle
+          command: gh-pages -r git@github.com:NELLExchange/nellexchange.github.io.git --branch master --message "[skip ci] Publish" --dist nelle
 workflows:
   version: 2
   build:

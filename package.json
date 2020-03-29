@@ -32,7 +32,7 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build",
-    "export": "sapper export --basepath nelle",
+    "export": "sapper export",
     "start": "npx serve __sapper__/export"
   }
 }
