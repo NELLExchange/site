@@ -44,7 +44,7 @@ jobs:
             - "e1:c9:94:fa:7a:a0:08:7a:fc:94:41:74:07:3a:f4:81"
       - run:
           name: Deploy Site
-          command: gh-pages -r git@github.com:NELLExchange/nellexchange.github.io.git --branch master --message "[skip ci] Publish" --dist export
+          command: gh-pages -r git@github.com:NELLExchange/NELLExchange.github.io.git --branch master --message "[skip ci] Publish" --dist export
 workflows:
   version: 2
   build:
