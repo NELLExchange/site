@@ -56,6 +56,10 @@
           <a class="navbar-item" href="resources/youtube">
             YouTube
           </a>
+
+          <a class="navbar-item" href="resources/podcasts">
+            Podcasts
+          </a>
         </div>
       </div>
     </div>
