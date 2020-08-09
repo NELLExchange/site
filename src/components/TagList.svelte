@@ -5,7 +5,7 @@
 </script>
 
 <div class="field is-grouped is-grouped-multiline">
-  {#each Object.keys(tags) as tag}
+  {#each Object.keys(tags || {}) as tag}
     <div class="control">
       <div class="tags has-addons">
         <TagBadge name={tag} value={tags[tag]}/>

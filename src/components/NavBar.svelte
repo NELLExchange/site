@@ -48,6 +48,10 @@
           <a class="navbar-item" href="resources/dictionaries">
             Dictionaries
           </a>
+          
+          <a class="navbar-item" href="resources/podcasts">
+            Podcasts
+          </a>
 
           <a class="navbar-item" href="resources/sites">
             Sites

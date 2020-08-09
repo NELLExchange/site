@@ -2,8 +2,8 @@
   export let name;
   export let value;
 
-  const successValues = [true, 'yes', 'mostly'];
-  const warningValues = ['paid', 'some', 'subtitles', 'text-to-speech'];
+  const successValues = [true, 'yes', 'mostly', 'beginner'];
+  const warningValues = ['paid', 'some', 'subtitles', 'text-to-speech', 'intermediate'];
 
   function getClass(value) {
     if (successValues.includes(value)) {
