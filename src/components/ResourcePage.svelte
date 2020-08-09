@@ -5,6 +5,20 @@
   export let title;
 </script>
 
+<style>
+  a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  @media screen and (max-width: 960px) {
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+</style>
+
 <section class="section">
   <div class="container is-fluid">
     <h1 class="title">{title}</h1>
